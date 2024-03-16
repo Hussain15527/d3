@@ -1,12 +1,3 @@
-// d3.select('body')
-//     .selectAll('p')
-//     .data([1,2,3,4])
-//     .enter()
-//     // .append('p')
-//     .text(dta => dta);
-
-// // d3.select("body").append("p").text("Hello World!");
-
 const margin = {
   top: 10,
   right: 20,
@@ -20,7 +11,7 @@ const margin = {
 // its preserved as the chart is resized
 const width = 600 - margin.left - margin.right;
 const height = 300 - margin.top - margin.bottom;
-const data = [15, 33, 20, 90, 10, 55, 60, 75, 58, 12];
+const data = [15, 33, 20];
 
 const xScale = d3.scaleBand().
 padding(0.2).
@@ -79,3 +70,12 @@ function responsivefy(svg) {
       svg.attr('height', Math.round(targetWidth / aspect));
   }
 }
+
+
+
+
+
+
+
+
+
